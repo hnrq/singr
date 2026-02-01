@@ -1,0 +1,14 @@
+#waveform ::part(region-content) {
+  font-family: monospace;
+  position: absolute;
+  top: 66px;
+}
+
+#waveform ::part(regions-container) {
+  font-family: monospace;
+  overflow: visible;
+}
+
+#waveform ::part(scroll) {
+  height: 82px;
+}

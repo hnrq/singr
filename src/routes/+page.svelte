@@ -44,14 +44,14 @@
       isRecording = true;
     } catch (err) {
       console.error("Error accessing microphone:", err);
-      alert("Could not access microphone. Please ensure permissions are granted.");
+      alert(
+        "Could not access microphone. Please ensure permissions are granted.",
+      );
     }
   }
 
   function stopRecording() {
     if (mediaRecorder && isRecording) {
-      // Note: We don't stop the tracks here immediately if we want the visualizer to fade out nicely,
-      // but for now we follow original logic.
       mediaRecorder.stop();
       isRecording = false;
       mediaRecorder.stream.getTracks().forEach((track) => track.stop());
@@ -133,7 +133,7 @@
           {#if isRecording}
             <StopIcon class="fill-red-500 size-full" />
           {:else}
-            <MicIcon class="fill-white size-full" />
+            <MicIcon class="fill-foreground size-full" />
           {/if}
         </div>
       </Button>
@@ -145,7 +145,9 @@
       class:border-purple-500_50={isDragOver}
       class:bg-purple-500_10={isDragOver}
     >
-      <p class="text-sm font-medium text-zinc-300">Tap the microphone to record</p>
+      <p class="text-sm font-medium text-zinc-300">
+        Tap the microphone to record
+      </p>
       <div class="flex items-center gap-3 text-xs text-zinc-500">
         <div class="h-px w-12 bg-zinc-800"></div>
         <span>OR</span>
@@ -162,7 +164,7 @@
     >
       <div class="flex flex-col items-center gap-4 animate-bounce">
         <div class="w-16 h-16 text-purple-400">
-          <UploadIcon />
+          <UploadIcon class="fill-foreground" />
         </div>
         <p class="text-2xl font-bold text-white">Drop to Upload</p>
       </div>

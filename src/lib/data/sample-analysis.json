@@ -1,0 +1,50 @@
+{
+  "summary_analysis": {
+    "overall_rating": "8/10",
+    "primary_register": "Mix Voice",
+    "technical_summary": "Strong vocal performance with excellent emotional connection. The artist demonstrates good control of their mix voice, though there are occasional pitch instabilities in the upper register. Phrasing is dynamic and engaging."
+  },
+  "vocal_timeline": [
+    {
+      "time_offset": 2.5,
+      "feedback_note": "Perfect pitch on the opening phrase with clear tone.",
+      "category": "strength",
+      "sub_category": "pitch"
+    },
+    {
+      "time_offset": 8.1,
+      "feedback_note": "Slightly flat on the sustained note, support dropped.",
+      "category": "adjustment",
+      "sub_category": "pitch"
+    },
+    {
+      "time_offset": 15.3,
+      "feedback_note": "Beautiful vibrato execution, very controlled.",
+      "category": "strength",
+      "sub_category": "dynamics"
+    },
+    {
+      "time_offset": 22.8,
+      "feedback_note": "Breath audible before the phrase start.",
+      "category": "adjustment",
+      "sub_category": "phrasing"
+    },
+    {
+      "time_offset": 30.0,
+      "feedback_note": "Excellent dynamic control transitioning to chorus.",
+      "category": "strength",
+      "sub_category": "dynamics"
+    },
+    {
+      "time_offset": 45.2,
+      "feedback_note": "Consonants slightly muddy in fast passage.",
+      "category": "adjustment",
+      "sub_category": "diction"
+    }
+  ],
+  "technical_drill_down": {
+    "pitch_stability": "Generally stable, with minor deviations at phrase ends.",
+    "breath_management": "Good capacity, but occasional gasps are audible.",
+    "diction_score": "7/10"
+  }
+}
